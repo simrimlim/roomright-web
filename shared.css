@@ -1,0 +1,128 @@
+/* ============================================================
+   RoomRight Landing — shared styles
+   ============================================================ */
+
+@font-face { font-family: 'Alpino'; src: url('fonts/Alpino-Bold.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Alpino'; src: url('fonts/Alpino-Black.woff2') format('woff2'); font-weight: 900; font-display: swap; }
+@font-face { font-family: 'Author'; src: url('fonts/Author-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Author'; src: url('fonts/Author-Bold.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Author'; src: url('fonts/Author-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Author'; src: url('fonts/Author-MediumItalic.woff2') format('woff2'); font-weight: 500; font-style: italic; font-display: swap; }
+
+:root {
+  --primary: #DB4F26;
+  --primary-light: #FFF0EB;
+  --primary-dark: #B83D1E;
+  --primary-muted: #E8A390;
+  --bg: #FFF7F1;
+  --surface: #FFFFFF;
+  --ink: #2A1A14;
+  --text: #DB4F26;
+  --text-2: #8B6B5D;
+  --text-3: #B8A198;
+  --border: #E8D5CC;
+  --border-light: #F5EBE5;
+  --display: 'Alpino', ui-sans-serif, system-ui, sans-serif;
+  --body: 'Author', Georgia, serif;
+  --ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--body);
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ----- Faithful phone mockup (small, used in hero/how-it-works) ---- */
+.phone-mock {
+  width: 260px; aspect-ratio: 9/19;
+  background: var(--bg);
+  border-radius: 38px;
+  padding: 10px;
+  position: relative;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.4) inset,
+    0 30px 60px -20px rgba(135, 60, 30, 0.35),
+    0 0 0 1.5px rgba(0,0,0,0.08);
+}
+.phone-mock::before {
+  content: '';
+  position: absolute; top: 18px; left: 50%;
+  transform: translateX(-50%);
+  width: 86px; height: 26px;
+  background: #1a1208; border-radius: 14px;
+  z-index: 3;
+}
+.phone-screen {
+  width: 100%; height: 100%;
+  background: var(--bg);
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Status bar */
+.pm-status {
+  height: 44px; padding: 0 24px 0 28px;
+  display: flex; align-items: flex-end; justify-content: space-between;
+  font-family: var(--ui); font-weight: 700; font-size: 13px;
+  color: var(--ink);
+  padding-bottom: 6px;
+}
+.pm-status-icons { display: flex; gap: 4px; align-items: center; }
+.pm-bars { width: 16px; height: 10px; }
+.pm-batt { width: 22px; height: 11px; border: 1px solid var(--ink); border-radius: 3px; padding: 1px; position: relative; }
+.pm-batt::after { content:''; position:absolute; right:-3px; top:3px; width:2px; height:5px; background: var(--ink); border-radius: 0 1px 1px 0; }
+.pm-batt-fill { height: 100%; background: var(--ink); border-radius: 1px; width: 78%; }
+
+/* ----- Generic ----- */
+.eyebrow {
+  font-family: var(--ui);
+  font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: var(--text-2);
+}
+.btn-primary {
+  font-family: var(--ui); font-weight: 600; font-size: 16px;
+  background: var(--primary); color: #fff;
+  border: 0; border-radius: 12px;
+  padding: 16px 24px; min-height: 52px;
+  cursor: pointer; transition: transform 0.15s, opacity 0.15s;
+  white-space: nowrap;
+}
+.btn-primary:hover { opacity: 0.92; }
+.btn-primary:active { transform: scale(0.98); }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+input[type="email"] {
+  font-family: var(--ui); font-size: 16px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px; min-height: 52px;
+  color: var(--ink);
+  outline: none;
+}
+input[type="email"]:focus { border-color: var(--primary); }
+input[type="email"]::placeholder { color: var(--text-3); }
+
+.hairline { height: 1px; background: var(--border-light); border: 0; margin: 0; }
+
+/* ----- Form states (success / error) ----- */
+.form-success {
+  font-family: var(--ui); font-size: 15px; font-weight: 600;
+  color: var(--primary);
+  padding: 16px 20px;
+  background: var(--primary-light);
+  border: 1.5px solid var(--primary-muted);
+  border-radius: 12px;
+  text-align: center;
+}
+.form-error {
+  font-family: var(--ui); font-size: 14px; color: #B83D1E;
+  margin-top: 8px;
+}
