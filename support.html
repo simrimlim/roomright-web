@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — RoomRight</title>
+<meta name="description" content="Get help with RoomRight — contact us with questions, report a problem, and find answers to common questions about accounts, matching, chat, and safety.">
+<meta name="theme-color" content="#DB4F26">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23DB4F26'/%3E%3Ctext x='50' y='72' font-family='system-ui,sans-serif' font-weight='900' font-size='64' fill='white' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="shared.css">
+<style>
+  body { background: var(--bg); color: var(--ink); }
+
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 48px;
+    background: rgba(255, 247, 241, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-light);
+  }
+  .wordmark {
+    font-family: var(--display); font-weight: 900;
+    font-size: 24px; letter-spacing: -0.5px;
+    color: var(--primary); text-decoration: none;
+  }
+  .nav-back {
+    font-family: var(--ui); font-weight: 600; font-size: 14px;
+    color: var(--text-2); text-decoration: none;
+  }
+  .nav-back:hover { color: var(--primary); }
+
+  .legal {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .legal-head { margin-bottom: 44px; }
+  .legal-head h1 {
+    font-family: var(--display); font-weight: 900;
+    font-size: clamp(40px, 7vw, 64px);
+    line-height: 1.0; letter-spacing: -1.5px;
+    color: var(--primary);
+    margin: 0 0 20px;
+  }
+  .legal-dates {
+    font-family: var(--ui); font-size: 14px; font-weight: 500;
+    color: var(--text-2);
+    margin: 0; line-height: 1.7;
+  }
+  .legal-dates span { display: block; }
+
+  .legal-lead {
+    font-family: var(--body);
+    font-size: 19px; line-height: 1.7;
+    color: var(--ink);
+    margin: 0 0 8px;
+  }
+
+  .legal-body h2 {
+    font-family: var(--display); font-weight: 900;
+    font-size: 26px; letter-spacing: -0.5px; line-height: 1.2;
+    color: var(--ink);
+    margin: 56px 0 18px;
+  }
+  .legal-body h3 {
+    font-family: var(--display); font-weight: 700;
+    font-size: 19px; letter-spacing: -0.2px; line-height: 1.3;
+    color: var(--ink);
+    margin: 34px 0 14px;
+  }
+  .legal-body p {
+    font-family: var(--body);
+    color: var(--ink);
+    font-size: 17px; line-height: 1.65;
+    margin: 0 0 18px;
+  }
+  .legal-body ul {
+    margin: 0 0 18px; padding: 0;
+    list-style: none;
+  }
+  .legal-body li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    font-family: var(--body);
+    color: var(--ink);
+    font-size: 17px; line-height: 1.65;
+  }
+  .legal-body li::before {
+    content: '';
+    position: absolute;
+    left: 4px; top: 0.72em;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--primary);
+  }
+  .legal-body a { color: var(--primary); }
+
+  .contact-card {
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: 28px;
+    margin: 0 0 8px;
+  }
+  .contact-card p {
+    font-family: var(--body);
+    font-size: 17px; line-height: 1.65;
+    margin: 0 0 10px;
+  }
+  .contact-card p:last-child { margin-bottom: 0; }
+  .contact-card a { color: var(--primary); font-weight: 600; }
+
+  .legal-footer {
+    border-top: 1px solid var(--border-light);
+    padding: 40px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+    font-family: var(--ui); font-size: 14px; color: var(--text-2);
+  }
+  .legal-footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
+  .legal-footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .nav { padding: 14px 18px; }
+    .wordmark { font-size: 20px; }
+    .nav-back { font-size: 13px; }
+    .legal { padding: 40px 20px 72px; }
+    .legal-head { margin-bottom: 32px; }
+    .legal-lead { font-size: 17px; }
+    .legal-body h2 { font-size: 23px; margin: 44px 0 16px; }
+    .legal-body h3 { font-size: 18px; margin: 30px 0 12px; }
+    .legal-body p, .legal-body li { font-size: 16px; }
+    .legal-footer { padding: 32px 20px; }
+    .contact-card { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="wordmark">RoomRight</a>
+  <a href="/" class="nav-back">← Back to RoomRight</a>
+</nav>
+
+<main class="legal">
+  <header class="legal-head">
+    <h1>Support</h1>
+    <p class="legal-dates">We're here to help</p>
+  </header>
+  <div class="legal-body">
+    <p class="legal-lead">Questions, problems, or feedback about RoomRight? Reach out any time — we read and answer every message.</p>
+
+    <h2>Contact us</h2>
+    <div class="contact-card">
+      <p>Email us at <a href="mailto:roomright18@gmail.com">roomright18@gmail.com</a> and we'll get back to you within 24–48 hours.</p>
+      <p>Include the email address you use to sign in and, if you're reporting a problem, what happened and what you expected — screenshots help a lot.</p>
+    </div>
+
+    <h2>Common questions</h2>
+
+    <h3>How does matching work?</h3>
+    <p>You answer a short lifestyle questionnaire (sleep schedule, cleanliness, guests, noise, budget, area). RoomRight computes a compatibility score between you and other members and shows compatible candidates in your Discover feed. Tap "knock" to express interest — if they knock back, it's a match and a private chat opens.</p>
+
+    <h3>How do I report or block someone?</h3>
+    <p>Open your chat with them, tap the menu in the top corner, and choose Report (you'll be asked to pick a reason) or Block. Blocking removes the match and they won't be able to contact you again. You can also unmatch from the same menu.</p>
+
+    <h3>How do I delete my account?</h3>
+    <p>Go to Settings → Delete account in the app. This removes your profile and personal data from our systems, as described in our <a href="/privacy">Privacy Policy</a>.</p>
+
+    <h3>Why can't I send a message sometimes?</h3>
+    <p>Chats in RoomRight are end-to-end encrypted. If you see "Setting up secure chat — try again in a moment," the app is finishing the secure setup for that conversation — wait a few seconds and try again. Messages are never sent unencrypted.</p>
+
+    <h3>Why do old messages say "Unable to decrypt"?</h3>
+    <p>Because chats are end-to-end encrypted, the keys live only on your device. If you reinstall the app or switch to a new phone, messages from before the change can no longer be read — not even by us. New messages work normally.</p>
+
+    <h3>How do I manage notifications?</h3>
+    <p>You can turn notifications on or off any time in the app's Settings, or in iOS Settings → Notifications → RoomRight.</p>
+
+    <h3>Who can use RoomRight?</h3>
+    <p>RoomRight is for adults aged 18 and over. We ask for your date of birth at sign-up to confirm this.</p>
+
+    <h2>Legal</h2>
+    <p>Our <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Service</a> cover how we handle your information and the rules for using RoomRight.</p>
+  </div>
+</main>
+
+<footer class="legal-footer">
+  <a href="https://roomright.io">roomright.io</a>
+  <span>© 2026 RoomRight</span>
+</footer>
+
+</body>
+</html>
