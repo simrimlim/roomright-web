@@ -45,6 +45,14 @@
   }
   .nav-cta:hover { background: var(--primary); color: #fff; }
 
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-links a {
+    font-family: var(--ui); font-weight: 600; font-size: 14px;
+    color: var(--text-2); text-decoration: none;
+  }
+  .nav-links a:hover { color: var(--primary); }
+  .nav-right { display: flex; gap: 28px; align-items: center; }
+
   /* ============ HERO ============ */
   .hero {
     padding: 80px 48px 120px;
@@ -294,6 +302,8 @@
   }
   @media (max-width: 640px) {
     .nav { padding: 14px 18px; }
+    .nav-links { display: none; }
+    .nav-right { gap: 0; }
     .wordmark { font-size: 20px; }
     .nav-cta { font-size: 13px; padding: 8px 14px; }
 
@@ -404,7 +414,14 @@
 
 <nav class="nav">
   <a href="#" class="wordmark">RoomRight</a>
-  <a href="#waitlist" class="nav-cta">Join the waitlist</a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="/support">Support</a>
+      <a href="/support#faq">FAQ</a>
+      <a href="/privacy">Privacy</a>
+    </div>
+    <a href="#waitlist" class="nav-cta">Join the waitlist</a>
+  </div>
 </nav>
 
 <!-- ============ HERO ============ -->
@@ -600,6 +617,7 @@
   <div class="footer-brand">RoomRight</div>
   <div class="footer-meta">
     <a href="/support">Support</a>
+    <a href="/support#faq">FAQ</a>
     <a href="/privacy">Privacy</a>
     <a href="/terms">Terms</a>
     <a href="https://www.instagram.com/roomright.co" target="_blank" rel="noopener">Instagram</a>
